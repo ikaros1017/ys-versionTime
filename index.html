@@ -43,16 +43,16 @@
       </div>
     </div>
     <script>
-      const versionData = ['2021-8-30'];
-      const arr = [];
-      let v = 0;
-      let v1 = 0;
+      var versionData = ['2021-8-30'];
+      var arr = [];
+      var v = 0;
+      var v1 = 0;
       for (var i = 0; i <= 40; i++) {
         if (v1 % 10 === 0) {
           v++;
           v1 = 0;
         }
-        for (const item of versionData) {
+        for (var item of versionData) {
           if (
             moment('2020-9-30')
               .add(6 * (i + 1), 'w')
