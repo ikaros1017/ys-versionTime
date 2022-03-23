@@ -39,6 +39,7 @@
           <span>开始时间：<br />{{ele.startDate}}</span>
           <span>结束时间：<br />{{ele.endDate}}</span>
           <span>前瞻时间：<br />{{ele.qianzhan}}</span>
+          <span>新角色预告时间：<br />{{ele.newGal}}</span>
         </div>
       </div>
     </div>
@@ -75,6 +76,10 @@
             qianzhan: moment('2020-9-30')
               .add(6 * i, 'w')
               .subtract(12, 'd')
+              .format('YYYY-MM-DD'),
+            newGal: moment('2020-9-30')
+              .add(6 * (i-1), 'w')
+              .subtract(5, 'd')
               .format('YYYY-MM-DD'),
           });
           v1++;
