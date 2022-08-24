@@ -72,23 +72,23 @@
             v++;
             v1 = 0;
           }
-          if (`${v}.${parseInt(v1 % 10)}` === '3.0') {
-            t=5;
-          }
-          if (`${v}.${parseInt(v1 % 10)}` === '3.4') {
-            t=6;
-          }
-          if (`${v}.${parseInt(v1 % 10)}` === '2.7') {
-            arr.push({
-              version: '2.7',
-              startDate: '2022-05-31',
-              endDate: moment('2022-05-31').add(t, 'w').format('YYYY-MM-DD'),
-              qianzhan: '0000-00-00',
-            });
-            date = '2022-06-01';
-            v1++;
-            continue;
-          }
+//           if (`${v}.${parseInt(v1 % 10)}` === '3.0') {
+//             t=5;
+//           }
+//           if (`${v}.${parseInt(v1 % 10)}` === '3.4') {
+//             t=6;
+//           }
+//           if (`${v}.${parseInt(v1 % 10)}` === '2.7') {
+//             arr.push({
+//               version: '2.7',
+//               startDate: '2022-05-31',
+//               endDate: moment('2022-05-31').add(t, 'w').format('YYYY-MM-DD'),
+//               qianzhan: '0000-00-00',
+//             });
+//             date = '2022-06-01';
+//             v1++;
+//             continue;
+//           }
           arr.push({
             version: `${v}.${parseInt(v1 % 10)}`,
             startDate: moment(date).add(t, 'w').format('YYYY-MM-DD'),
